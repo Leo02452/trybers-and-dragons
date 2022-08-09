@@ -21,5 +21,3 @@ export default abstract class Race {
     return this._dexterity;
   }
 }
-
-console.log(Race.name);
