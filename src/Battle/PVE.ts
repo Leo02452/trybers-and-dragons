@@ -1,12 +1,12 @@
-import Fighter, { SimpleFighter } from '../Fighter';
+import { SimpleFighter } from '../Fighter';
 import Battle from './Battle';
 import PVP from './PVP';
 
 export default class PVE extends Battle {
-  player: Fighter;
+  player: SimpleFighter;
   fighters: SimpleFighter[];
 
-  constructor(player: Fighter, fighters: SimpleFighter[]) {
+  constructor(player: SimpleFighter, fighters: SimpleFighter[]) {
     super(player);
     this.player = player;
     this.fighters = fighters;
